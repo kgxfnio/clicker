@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset-default-styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>My clicker</h1>
+    <div class="mainContainer" id="mainContainer">
+        <div class="playersBox" id="playersBox">
+            <h2 class="playersTag">Players</h2>
+            <div class="settingsBlock" id="settingBlock">
+                <input type="text" name="playerName" id="playerName" class="playerName" placeholder="user name" maxlength="6">
+                <input type="color" name="colorChoose" class="colorChoose" id="colorChoose">
+                <button class ="addBtn" id="addBtn" onclick="addPlayer()">+</button>
+            </div>
+            <ol class="playersList" id="playersList">
+
+            </ol>
+        </div>
+        <div class="buttonsBox" id="buttonsBox">
+                <button class="clickBtn" id="clickBtn">clicker</button>            
+            <button class="lockedBtn" id="lockedBtn" onclick="unlock()">Locked</button>
+        </div>
+        <div class="scoreBox" id="scoreBox">
+            <h2 class="scoreTag">Score</h2>
+            <div class="resultsContainer" id="resultsContainer">
+                <h4 class="namesLine" id="namesLine">Names</h4>
+                <h4 class="scoreLine" id="scoreLine">Scores</h4>
+            </div>
+            <div class="containerToList" id="containerToList"></div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
